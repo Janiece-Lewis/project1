@@ -1,0 +1,43 @@
+<!-- this file is just for form on homescreen -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <title>Finding Flix</title>
+    <!-- tailwind script -->
+    <script src="http://cdn.tailwindcss.com"></script>
+    <!-- flowbite css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    
+
+            <!-- dropdown menu form -->
+<div id="genre-box">
+            <form action="cards.html" id="genre-form" onsubmit="handleFormSubmit()">
+                <label for="genres">Choose a genre:</label>
+                
+                <select id="genres" name="genres">
+                  <option class="actionMovies action" id="action" value="1">action</option>
+                  <option class="animeMovies anime" value="33">anime</option>
+                  <option class="comedyMovies comedy" value="4">comedy</option>
+                  <option class="documentaryMovies documentary"value="6">documentary</option>
+                  <option class="sciFiMovies science-fiction"value="15">sci-fi</option>
+                  <option class="horrorMovies horror"value="11">horror</option>
+                </select>
+                <input id="startbtn" type="submit" value="Submit">
+                </form>
+            </div>
+
+    <script src="./assets/script-main.js"></script>
+</body>
+</html>
